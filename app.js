@@ -99,7 +99,6 @@ const renderContact = () => {
 
 // Function to render the top menu dynamically
 const renderMenu = () => {
-    toggleMenu()
     const menuItems = ['Calculator', 'About', 'Contact']
     const menuHTML = menuItems.map(item => `<div class='menu-item cursor-pointer' onclick="setView('${item}')">${item}</div>`).join('')
     menu.innerHTML=menuHTML
