@@ -128,3 +128,4 @@ const renderThemeToggle = () => {
 renderMenu()
 renderThemeToggle()
 renderCalculator()
+
