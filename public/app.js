@@ -9,6 +9,14 @@ const html = document.documentElement
 // Function to toggle the dark mode class on the HTML element
 //const toggle = () => html.classList.toggle('dark')
 
+// set theme
+const toggle = () => {
+    document.documentElement.classList.toggle("dark")
+    document.documentElement.classList.toggle("light")
+    document.body.classList.toggle("dark")
+    document.body.classList.toggle("light")
+}
+
 // Function to set the view based on the selected menu option
 const setView = (v) => {
     header.innerText = v
@@ -138,13 +146,7 @@ if (origin.indexOf('://localhost') === -1 && origin.indexOf('://127.0.0.1') === 
         .catch(error => console.error(error))
 }
 
-// set theme
-const toggle = () => {
-    document.documentElement.classList.toggle("dark")
-    document.documentElement.classList.toggle("light")
-    document.body.classList.toggle("dark")
-    document.body.classList.toggle("light")
-}
+
 
 const setTheme = async (theme) => {
     if (!document.documentElement.classList.contains("dark") && !document.documentElement.classList.contains("light")) {
